@@ -9,7 +9,7 @@ module.exports = class Node extends EventEmitter {
 
     const packageDefinition = protoLoader.loadSync(__dirname + '/../protos/messages.proto', {
       keepCase: true,
-      longs: String,
+      longs: BigNumber,
       enums: String,
       defaults: true,
       oneofs: true
